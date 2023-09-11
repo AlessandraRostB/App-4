@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>App</title>
+</head>
+<body>
+    <h1>Saúde Mental em dia</h1>
+    <div class="text-center">
+        <img src="https://jaleko-blog-files.s3.amazonaws.com/wp-content/uploads/2020/11/03122735/large-Dia-saude-mental-2-810x693.png" class="rounded" alt="...">
+    </div>
+    <div class="divCenter">
+        <button type="submit" onClick="location.href='login.html'">Login</button>
+        <button type="submit" onClick="location.href='cadastrar.html'">Cadastro</button>
+    </div>
+    <script>
+        var btnElement = document.querySelector('button.botao');
+        btnElement.addEventListener("click", criarQuadrado);
+    
+        function criarQuadrado() {
+          var newDiv = document.createElement('div');
+          newDiv.style.width = '100px';
+          newDiv.style.height = '100px';
+          document.querySelector('#app').appendChild(newDiv)
+        }
+    </script>
+    
+</body>
+</html>
